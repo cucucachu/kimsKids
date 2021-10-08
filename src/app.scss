@@ -1,0 +1,26 @@
+$background-color: #f5f4f6;
+$primary-color: #3a1950;
+
+$header-font:'Playfair Display', serif;
+$paragraph-font: 'Open Sans', sans-serif;
+
+h1 {
+    color: $primary-color;
+    font-family: $header-font;
+}
+
+h2 {
+    color: $primary-color;
+    font-family: $header-font;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e7;
+    font-family: $paragraph-font;
+}
+
+.container {
+    margin: 2rem;
+}
