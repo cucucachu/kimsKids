@@ -8,7 +8,7 @@ export const HomePage = () => {
     return (
         <div className="container">
             <article>
-                <section>
+                <section className="shadow">
                     <h2>What I Do</h2>
                     <p>
                         Educational consulting

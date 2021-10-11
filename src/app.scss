@@ -1,12 +1,22 @@
-$background-color: #f5f4f6;
+$background-color: #f8f8f8;
 $primary-color: #3a1950;
 
 $header-font:'Playfair Display', serif;
 $paragraph-font: 'Open Sans', sans-serif;
+/* Using SCSS variables to store breakpoints */
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 500px;
 
 h1 {
     color: $primary-color;
     font-family: $header-font;
+}
+
+
+header img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
 }
 
 h2 {
@@ -17,10 +27,44 @@ h2 {
 body {
     height: 100%;
     width: 100%;
-    background-color: #e6e6e7;
+    background-color: $background-color;
+    margin: 0;
     font-family: $paragraph-font;
 }
 
 .container {
-    margin: 2rem;
+    margin: 4rem;
+}
+
+section {
+    padding: 2rem;
+    border: 2px solid #999;
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px 1px #999;
+    margin: 2rem 0;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .container {
+        margin: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+        border: 2px solid #999;
+        border-radius: 20px;
+        box-shadow: 5px 5px 3px 1px #999;
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: $breakpoint-phone) {
+    section {
+        padding: 0;
+        border: 0 none;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 2rem 0;
+    }
+
 }
